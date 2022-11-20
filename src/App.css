@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  font-family:Helvetica,sans-serif;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cats {
+  width: 25%;
+}
