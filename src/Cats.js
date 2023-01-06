@@ -1,24 +1,24 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
-const url = 'https://cataas.com/api/cats';
+// const url = 'https://cataas.com/api/cats';
 // это api выводящее изображения не работает https://cataas.com/cat/cute
 
 const Caats = () => {
-    const [cats, setCats] = useState([])  
+    const [cats, setCats] = useState([])
     const fetchUsers = async () => {
-        const response = await fetch(url)
+        const response = await fetch(process.env.REACT_APP_BASE_URL)
         const cats = await response.json()
         setCats(cats)
-    }   
+    }
     useEffect(() => {
         fetchUsers()
     }, [])
 
     return (
-        <>  
+        <>
             <h1><i>Cat's list</i></h1>
             <ul className="list">
-             {cats.map((user) => {  
+                {cats.map((user) => {
                     const { _id } = user
                     return (
                         <li key={_id}>
@@ -30,8 +30,8 @@ const Caats = () => {
                 })}
             </ul>
         </>
-   
-  )
+
+    )
 }
 
 export default Caats

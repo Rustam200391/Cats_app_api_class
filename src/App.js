@@ -1,9 +1,9 @@
-import Caats from'./Cats'
+import Caats from './Cats'
 
 function App() {
   return (
     <div >
-      <Caats/>
+      <Caats />
     </div>
   );
 }
