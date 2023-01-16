@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
 // const url = 'https://cataas.com/api/cats';
 // это api выводящее изображения не работает https://cataas.com/cat/cute

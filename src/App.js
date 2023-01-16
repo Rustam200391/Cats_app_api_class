@@ -1,4 +1,4 @@
-import Caats from './Cats'
+import Caats from './components/Cats';
 
 function App() {
   return (
